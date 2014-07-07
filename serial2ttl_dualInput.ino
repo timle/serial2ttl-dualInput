@@ -18,10 +18,7 @@
  
  * led on 22, 28
  * bnc connector to 24, 30
- 
- 19 June 2014
- Tim Leonard
-  
+
  */
 
 // globals
