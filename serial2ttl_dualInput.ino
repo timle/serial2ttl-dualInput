@@ -1,6 +1,7 @@
 /*
  Receives from the main serial port, and serial port #1.
- Outputs ttl based on contents of serial command. 
+ Outputs TTLs based on contents of serial command. 
+ LEDs indicate when TTLs are activated.
  
  Two serial input strings. 
    'a' activates ttl 1 (led and bnc output)
@@ -55,22 +56,6 @@ void loop() {
   doSwitch(inByte_0);
   doSwitch(inByte_1);
 
-  //Serial.write(inByte_0) ;
-  
-  //  Serial.write(inByte); 
-  //  digitalWrite(22, HIGH);
-  //  delay(1); 
-  //  digitalWrite(22, LOW);
-  //}
-  
-  // read from port 0, send to port 1:
-  //if (Serial.available()) {
-  //  inByte0 = Serial.read();
-  //  Serial1.write(inByte); 
-  //  digitalWrite(22, HIGH);
-  //  delay(1); 
-  //  digitalWrite(22, LOW);
- // }
 }
 
 int checkSerial(HardwareSerial &serialId){
