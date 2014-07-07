@@ -45,11 +45,7 @@ void setup() {
 }
 
 void loop() {
-  // read from port 1, send to port 0:
-  
-  //int inByte_1 = 0;
-  //int inByte_0 = 0;
-  
+
   int inByte_0 = checkSerial(Serial);
   int inByte_1 = checkSerial(Serial1);
   
@@ -57,6 +53,7 @@ void loop() {
   doSwitch(inByte_1);
 
 }
+
 
 int checkSerial(HardwareSerial &serialId){
   int inByte = 0;
@@ -67,6 +64,7 @@ int checkSerial(HardwareSerial &serialId){
   
   return inByte;
 }
+
 
 void doSwitch(int dat){
     
@@ -85,6 +83,7 @@ void doSwitch(int dat){
         break;
     } 
 }
+
 
 void doTtl(int ledId, int bncId){
     digitalWrite(ledId, HIGH);
